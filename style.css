@@ -39,7 +39,7 @@ body{
     padding:0.6rem 0.8rem 0.6rem 0.8rem;
     border: none;
     cursor: pointer;
-    background: #000;
+    background: rgb(61, 10, 10);
     color: #dee2e6;
 }
 
