@@ -1,10 +1,8 @@
 const addButtonEl = document.getElementById("button");
 const listEl =  document.querySelector("ul");
 const inputEl = document.querySelector("input");
+
 addButtonEl.addEventListener('click',addFunc);
-
- 
-
 
 function addFunc(){
   const inputVal = inputEl.value;
@@ -56,19 +54,17 @@ function addFunc(){
   editBtnEl.innerText = 'Edit';
   editBtnEl.addEventListener('click', editFunc);
   
- 
   inputEl.value = '';
-
 
   function editFunc(e){
 
     const parentElement = e.target.parentElement;
-    parentElement.removeChild(removeBtnEl);
-    parentElement.removeChild(editBtnEl);
-    parentElement.removeChild(checkbox);
-    parentElement.removeChild(liTextElement);
-    saveBtn.classList.add('block');
-    editEl.classList.add('block');
+    // parentElement.removeChild(removeBtnEl);
+    // parentElement.removeChild(editBtnEl);
+    // parentElement.removeChild(checkbox);
+    // parentElement.removeChild(liTextElement);
+    saveBtn.classList.toggle('block');
+    editEl.classList.toggle('block');
     console.log(e.target.value ,"FFF")
     
    }
@@ -79,12 +75,12 @@ function addFunc(){
 
     const parentElement = e.target.parentElement;
     
-    parentElement.appendChild(checkbox);
-    parentElement.appendChild(liTextElement);
-    parentElement.appendChild(removeBtnEl);
-    parentElement.appendChild(editBtnEl);
-    parentElement.removeChild(saveBtn);
-    parentElement.removeChild(editEl);
+    // parentElement.appendChild(checkbox);
+    // parentElement.appendChild(liTextElement);
+    // parentElement.appendChild(removeBtnEl);
+    // parentElement.appendChild(editBtnEl);
+    // parentElement.removeChild(saveBtn);
+    // parentElement.removeChild(editEl);
 
   
   }
