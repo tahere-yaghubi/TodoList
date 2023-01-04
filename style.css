@@ -5,14 +5,18 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    
     flex-direction: column;
-    width: 600px;
+   
     height: auto;
     margin: 0 auto;
 
 }
-
+.todoTable{
+    background: #000;
+    width: calc(100% - 2rem);
+    height: 100vh;
+    margin: 0 auto;
+}
 .add-todo{
     display: flex;
     flex-direction: row;
@@ -39,12 +43,13 @@ body{
     padding:0.6rem 0.8rem 0.6rem 0.8rem;
     border: none;
     cursor: pointer;
-    background: rgb(61, 10, 10);
-    color: #dee2e6;
 }
 
 .todo-list{
  padding: 0.5rem;
+ width: calc(100% - 2rem);
+ flex: 1;
+ 
 }
 .todo-list li{
     padding: 0.6rem;
@@ -94,4 +99,34 @@ align-items: center;
     justify-content: center;
     align-items: center;
 
+}
+.editBtn{
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+
+}
+.saveBtn{
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+    margin-left: auto;
+    cursor: pointer;
+
+    display: none;
+
+}
+.editInput{
+    /* border: none; */
+    outline: none;
+    display: none;
+
+}
+.block{
+    display: block;
 }
